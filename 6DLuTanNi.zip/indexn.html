@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+function login() {
+  
+if(myform.uname.value=="peter" && myform.psw.value=="888"){
+ return true;
+}else if(myform.uname.value=="mary" && myform.psw.value=="999"){
+ return true;
+ }else
+{
+ alert("Username/password is wrong!");
+ return false;
+}
+
+}
+
+</script>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class=" w3-container w3-light-grey ">
+<h2>ABC Learning Center</h2>
+</div>
+<div >
+ 
+  <div class="w3-bar w3-pale-blue w3-mobile ">
+    <a href="indexn.html" class="w3-bar-item w3-button w3-mobile "><img src="logo.png" width="40" height="40"></a>
+   
+    
+    
+    <div class="w3-dropdown-hover w3-mobile ">
+      <a href="learning.html"><button class="w3-button">Start learning</button></a>
+      <div class="w3-dropdown-content w3-card-4">
+        <a href="math.html" class="w3-bar-item w3-button">Math</a>
+        <a href="artmusic.html" class="w3-bar-item w3-button">Language Art&Music</a>
+        
+      </div>
+    </div>
+    
+    
+    <div class="w3-dropdown-hover w3-mobile  ">
+      <a href="tpc.html"><button class="w3-button">Teacher/Parent Center</button></a>
+     
+    </div>
+
+
+ <!-- login button-->  
+    <div class="w3-dropdown-hover w3-mobile  ">
+      <button class="w3-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      <div id="id01" class="modal">
+  
+  <form name="myform" class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post" onSubmit="return login()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+
+ <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    </div>
+    
+  </div>
+</div>
+
+<div class="wrapper">
+	<div class="header grid-container full">
+		<div class="hero-banner bg-img grid-x" style="background-image: url('https://img.freepik.com/free-vector/flat-children-s-day-spanish-background_23-2149317533.jpg?w=1380&t=st=1689236067~exp=1689236667~hmac=58880093204155d6d516c7cf2a1b7b72e6b4a4a1ec28b70c5457bcf6906bca6e');">
+			<div class="grid-container">
+				<div class="grid-x grid-margin-x">
+					<div class="cell text-center">
+						<h1>Welcome to ABC Learning Center</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="grid-container full">
+			<div class="banner-wrapper bg-img" style="background-image:url('https://www.familyeducation.com/sites/default/files/2017-08/kindergaren%20boy.jpg');">
+				<div class="grid-container">
+					<div class="grid-x grid-margin-x grid-margin-y">
+						<div class="cell">
+							<div class="box text-center v-align">
+								<div class="headline"><h2>Our Story</h2></div>
+								<div class="text"><p>ABC Learning Center was born from a vision shared by a group of passionate educators and parents in Hong Kong who were determined to revolutionize early childhood education. Recognizing the unique blend of Eastern and Western educational practices, we embarked on creating an online platform that offers a balanced and holistic learning approach.
+
+Initially starting as a small community initiative in the heart of Hong Kong, we quickly grew in popularity due to our innovative methods and child-centric philosophy. Today, we're proud to offer a comprehensive online curriculum that serves families across Asia and beyond.
+
+</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-container full">
+			<div class="banner-wrapper bg-img" style="background-image:url('https://i0.wp.com/redkitedays.co.uk/wp-content/uploads/2021/08/4.png?fit=1748%2C1240&ssl=1');">
+				<div class="grid-container">
+						<div class="grid-x grid-margin-x grid-margin-y">
+						<div class="cell medium-6">
+							<div class="box">
+								<div class="headline"><h2>Our Vision</h2></div>
+								<div class="text"><p>We are dedicated to providing premium educational content that nurtures creativity, curiosity, and a love for learning. Our programs are designed to be interactive and enjoyable, while also laying a strong foundation for future academic success.
+</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-container full">
+			<div class="banner-wrapper bg-img" style="background-image:url('https://power-social.com/wp-content/uploads/2020/03/Looking-for-a-Kindergarten-School-for-your-Child.jpg');">
+				<div class="grid-container">
+						<div class="grid-x grid-margin-x grid-margin-y">
+						<div class="cell medium-6 medium-offset-6">
+							<div class="box">
+								<div class="headline"><h2>Our Team</h2></div>
+								<div class="text"><p>- Founder & CEO: Lily Wong, a former kindergarten teacher with a degree in Psychology and a deep understanding of early childhood education.</p>
+								<p>- **Chief Academic Officer:** Dr. Amanda Cheung, PhD, specializing in child cognitive development and educational technology.</p>
+								<p>- **Math Curriculum Lead:** David Wang, an experienced educator committed to developing creative and engaging math materials.</p>
+								<p>- **Music Education Director:** John Lee, a musician with extensive teaching experience, dedicated to creating child-friendly music education content.</p>
+								<p>- **Art Program Coordinator:** Emily Chan, an artist and educator whose courses aim to encourage children to express their creativity freely.
+</p></div>
+
+<div class="headline"><h2>Join Us</h2></div>
+								<div class="text"><p>Embark on your child's learning adventure with ABC Learning Center. 
+								Visit our website or contact us for more information. 
+								We look forward to growing and learning with your little ones!</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+</body>
+</html>   

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript">
+function login() {
+  
+if(myform.uname.value=="peter" && myform.psw.value=="888"){
+ return true;
+}else if(myform.uname.value=="mary" && myform.psw.value=="999"){
+ return true;
+ }else
+{
+ alert("Username/password is wrong!");
+ return false;
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+<div class=" w3-container w3-light-grey ">
+<h2>ABC Learning Center</h2>
+</div>
+
+
+<div >
+ 
+  <div class="w3-bar w3-pale-blue w3-mobile ">
+    <a href="indexn.html" class="w3-bar-item w3-button w3-mobile "><img src="logo.png" width="40" height="40"></a>
+   
+    
+    
+    <div class="w3-dropdown-hover w3-mobile ">
+      <a href="learning.html"><button class="w3-button">Start learning</button></a>
+      <div class="w3-dropdown-content w3-card-4">
+        <a href="math.html" class="w3-bar-item w3-button">Math</a>
+        <a href="artmusic.html" class="w3-bar-item w3-button">Language Art&Music</a>
+        
+      </div>
+    </div>
+    
+    
+    <div class="w3-dropdown-hover w3-mobile  ">
+      <a href="tpc.html"><button class="w3-button">Teacher/Parent Center</button></a>
+     
+    </div>
+
+
+ <!-- login button-->  
+    <div class="w3-dropdown-hover w3-mobile  ">
+      <button class="w3-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      <div id="id01" class="modal">
+  
+  <form name="myform" class="modal-content animate" action="https://www.w3schools.com/action_page.php" method="post" onSubmit="return login()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+ <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="w3-row  w3-pale-yellow">
+
+<div class="w3-third w3-container ">
+  <h2>Math song</h2>  
+  <p><a href="mathsong.html"><img src="mathsong.jpg" style="width:100%" class="w3-round w3-opacity w3-hover-opacity-off" ></a></p>
+</div>
+
+<div class="w3-third w3-container ">
+  <h2>Number</h2>
+<p><a href="number.html"><img src="number.jpg" style="width:100%" class="w3-round w3-opacity w3-hover-opacity-off" ></a></p>
+</div>
+
+</div>
+
+
+
+<div class="w3-row  w3-pale-yellow">
+
+<div class="w3-third w3-container ">
+  <h2>Kindergarten Math</h2>  
+  <p><a href="kmath.html"><img src="kmath.jpg" style="width:100%" class="w3-round w3-opacity w3-hover-opacity-off" ></a></p>
+</div>
+
+<div class="w3-third w3-container ">
+  <h2>Shape</h2>
+<p><a href="shape.html"><img src="shape.jpg" style="width:100%" class="w3-round w3-opacity w3-hover-opacity-off" ></a></p>
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>   
